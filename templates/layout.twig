@@ -1,0 +1,127 @@
+
+<!--<style>
+html {
+  filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+}
+black-ribbon 
+{   position: fixed;
+    z-index: 9999;
+    width: 70px;
+} 
+@media only all and (min-width: 768px) { .black-ribbon { width: auto; } }
+.stick-left { left: 0; } 
+.stick-right { right: 0; } 
+.stick-top { top: 0; } 
+.stick-bottom { bottom: 0; }
+
+
+
+
+</style>-->
+<html>
+    <head>
+    
+        <meta charset="utf-8">
+        <META content="รับทำงานวิจัย,ที่ปรึกษางานวิจัย ราคาไม่แพง" name=description>
+        <META content="รับทำงานวิจัย, งานวิจัย, รับทำงานวิจัย, รับปรึกษางานวิจัย, รับแก้ไขงานวิจัย" name=Keywords>
+        <META name="robots" content="index,follow">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>รับทำงานวิจัย รับปรึกษางานวิจัย แก้ไขงานวิจัย ทำงานวิจัย</title>
+
+        <link href="{{ base_url() }}/asset/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ base_url() }}/asset/css/sweetalert2.min.css" rel="stylesheet">
+        <link href="{{ base_url() }}/asset/css/font-awesome.min.css" rel="stylesheet">
+        <link href="{{ base_url() }}/asset/css/fonts.css" rel="stylesheet">
+        <link href="{{ base_url() }}/asset/css/stylesheet.css" rel="stylesheet">
+        <link href="{{ base_url() }}/asset/css/animate.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="{{ base_url() }}/asset/css/scrolling-nav.css" rel="stylesheet">
+
+        <link rel="shortcut icon" href="{{ base_url() }}/asset/images/logo.jpg">
+        
+    </head>
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+      <header class="navbar-fixed-top">
+      <!--<img src="https://goo.gl/Yl6KNg" style="position: absolute;z-index:1;" class="black-ribbon stick-top stick-left"/>-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 logo">
+                    <a href="{{ base_url() }}/"><img src="{{ base_url() }}/asset/images/logo.png" alt="logo"></a>
+                </div>
+                <div class="pull-right col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                    <div class="header-phone">
+                        <div class="phone-content">
+                            <h2>086-541-1797</h2>
+                            <p>Contact with me</p>
+                        </div>
+                    </div>
+                </div>
+                <menu class="col-lg-6 col-md-6 col-sm-6 col-xs-12 main-menu">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            </div>
+
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="#page-top" class="page-scroll"><i class="fa fa-home" aria-hidden="true"></i> HOME </a></li>
+                                <li><a href="#howtowork" class="page-scroll">HOW WE WORK</a></li>
+                                <li><a href="#service" class="page-scroll">SERVICE</a></li>                                
+                                <li><a href="#contact" class="page-scroll">CONTACT</a></li>
+                            </ul>
+                            </div><!-- /.navbar-collapse -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+                </menu>
+            </div>            
+        </div>
+      </header><!-- /header-->
+      
+
+      {% block body %}
+
+      {% endblock %}
+      
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                    ผู้เข้าชมทั้งหมด {{views.get('counter')}} คน<br>
+                    © copy rights 2017 All Rights Reserved. Made with by Chinbunn.
+                </div>
+            </div>
+        </div>
+    </footer>   
+      
+    </div>
+
+        <script src="{{ base_url() }}/asset/js/jquery.min.js"></script>
+        
+        <script src="{{ base_url() }}/asset/js/bootstrap.min.js"></script>
+        <script src="{{ base_url() }}/asset/js/sweetalert2.min.js"></script>
+        <script src="{{ base_url() }}/asset/js/wow.min.js"></script>
+        <!-- Scrolling Nav JavaScript -->
+        <script src="{{ base_url() }}/asset/js/jquery.easing.min.js"></script>
+        <script src="{{ base_url() }}/asset/js/scrolling-nav.js"></script>
+        
+        {% block script %}
+            <script>
+                
+            </script>
+        {% endblock %}
+
+    </body>
+</html>

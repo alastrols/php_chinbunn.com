@@ -1,0 +1,76 @@
+body{
+    font-family: 'supermarket';
+    background: url(../images/bg.png) ;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 30%;
+}
+
+.inner h1{
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.login{
+    background-color: #fff;
+    padding: 30px 15px;
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.11);
+}
+
+.login label {
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+    padding-bottom: 5px;
+    color: #353535;
+    line-height: 1.25em;
+    letter-spacing: 1.2;
+}
+
+.btn-login button{
+    text-transform: uppercase;
+    background-color: #25150d;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    padding: 8px 40px;
+    margin: 15px 0 5px 0;
+}
+
+.btn-login button:hover{
+    background-color: #fdb817;
+}
+
+.swal2-modal {
+    background-color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+	left: 0px;
+    top: 50%;
+    margin-top: -200px;
+    max-height: 90%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 2000;
+}
