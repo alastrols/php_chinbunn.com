@@ -3,7 +3,7 @@
 {% block body %}
 
 <div id="intro" class="cover">
-    <img class="img-responsive" src="{{ base_url() }}/asset/images/cover.jpg" alt="Chinbun welcome">
+    <img class="img-responsive" src="/asset/images/cover.jpg" alt="Chinbun welcome">
     <div class="overlay">
         <div class="container">
             <div class="row">
@@ -73,7 +73,7 @@
 <section class="service service-gr">
 	<div class="imageblock_content col-md-6 col-sm-4 pos-right">
 		<div class="content-bg" style="background: url(../asset/images/service01.jpg); opacity: 1;">
-			<img width="1600" height="1067" src="{{ base_url() }}/asset/images/service01.jpg" class="attachment-full size-full" alt="">
+			<img width="1600" height="1067" src="/asset/images/service01.jpg" class="attachment-full size-full" alt="">
 		</div>
     </div>
 	<div class="container">
@@ -98,7 +98,7 @@
 <section class="service service-wh">
     <div class="imageblock_content col-md-6 col-sm-4 pos-left">
 		<div class="content-bg" style="background: url(../asset/images/service02.jpg); opacity: 1;">
-			<img width="1600" height="1067" src="{{ base_url() }}/asset/images/service02.jpg" class="attachment-full size-full" alt="">
+			<img width="1600" height="1067" src="/asset/images/service02.jpg" class="attachment-full size-full" alt="">
 		</div>
     </div>
 	<div class="container">
@@ -123,7 +123,7 @@
 <section class="service service-gr">
 	<div class="imageblock_content col-md-6 col-sm-4 pos-right">
 		<div class="content-bg" style="background: url(../asset/images/service03.jpg); opacity: 1;">
-			<img width="1600" height="1067" src="{{ base_url() }}/asset/images/service03.jpg" class="attachment-full size-full" alt="">
+			<img width="1600" height="1067" src="/asset/images/service03.jpg" class="attachment-full size-full" alt="">
 		</div>
     </div>
 	<div class="container">
@@ -162,7 +162,7 @@
                 </ul>
                 <ul class="contact-social text-center">
                     <li class="col-sm-6 col-xs-12 social-fb text-right"><a href="https://www.facebook.com/chinbunn/" target="_blank"><i class="fa fa-facebook" aria-hidden="true" style="padding-right: 50px;"></i>chinbunn.omnisience</a></li>
-                    <li class="col-sm-6 col-xs-12 social-line text-left"><img src="{{ base_url() }}/asset/images/line.jpg">@chinbunn</li>
+                    <li class="col-sm-6 col-xs-12 social-line text-left"><img src="/asset/images/line.jpg">@chinbunn</li>
                 </ul>
             </div>
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-contact">
@@ -217,7 +217,7 @@ function validate() {
   $("#result").text("");
   var email = $("#email").val();
   if (validateEmail(email)) {
-  var urlStr = "{{base_url()}}/send.php";
+  var urlStr = "send.php";
   var data = $( "#form" ).serialize();
   $.ajax({
    url : urlStr,
@@ -256,5 +256,5 @@ function validate() {
 }
 $("#sent").bind("click", validate);
 </script>
-<script src="{{base_url()}}/asset/js/phone.js"></script>
+<script src="/asset/js/phone.js"></script>
 {% endblock %}
